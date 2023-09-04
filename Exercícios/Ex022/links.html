@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classes</title>
+   
+    <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        a{
+            color: green;
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: rgb(21, 102, 224);
+            text-decoration: underline;
+            font-weight: bolder;
+            font-size: 1.1em;
+        }
+
+        a:active{
+            background-color: aqua;
+        }
+    p::selection {
+  background-color: yellow;
+  color: black;
+}
+
+       
+    </style>
+</head>
+<body>
+    <h1>Olhe os links abaixo</h1>
+
+    <p>1° melhor música do álbum Validation <a href="https://open.spotify.com/track/3KxJPXL13cWlvCq924aaiW?si=8fcb3c83409441db" target="_blank">Clique aqui</a></p>
+    <p>2° melhor música do álbum Validation <a href="https://open.spotify.com/track/4a6cdkX51DLvwqXK6JHjU3?si=d5149d98fd4a4c02" target="_blank">Clique aqui</a></p>
+    <p>3° melhor música do álbum Validation <a href="https://open.spotify.com/track/56FvfB7Mri3mS2EgvozByz?si=0a8837dbb848445b" target="_blank">Clique aqui</a></p>
+    
+</body>
+</html>

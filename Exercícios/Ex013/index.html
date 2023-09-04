@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudios</title>
+</head>
+<body>
+    <h1>Áudios</h1>
+    <p>Para usar áudios no seu site, você terá de usar a tag <mark>audio</mark> e seus atributos</p>
+
+    <audio src="Aud/audio-mp3.mp3" controls autoplay loop></audio>
+
+    <p>o atributo <mark>controls</mark> mostra os controles de play.<br> o atributo <mark>autoplay</mark> inicia o áudio assim que a pagina carregar (depende do navegador).<br> o atributo <mark>loop</mark> deixa o áudio em loop.</p>
+
+    <audio preload="metadata" controls>
+        <source src="Aud/audio-m4a.m4a" type="audio/ma4">
+        <source src="Aud/audio-mp3.mp3" type="audio/mpeg">
+        <source src="Aud/audio-ogg.ogg" type="audio/ogg">
+        <source src="Aud/audio-wav.wav" type="audio/wav">
+
+        <p>seu navegador não suporta áudio <a href="Aud/audio-mp3.mp3" download="audio-mp3.mp3" type="audio/mpeg" target="_blank"> Clique para download</a> </p>
+
+    </audio>
+
+    <p>seu navegador não suporta áudio <a href="Aud/audio-mp3.mp3" download="audio-mp3.mp3" type="audio/mpeg" target="_blank"> Clique para download</a> </p>
+
+    <h2>Listas de tipos de áudios</h2>
+    <ul>
+        <li><audio src="Aud/audio-m4a.m4a" controls loop></audio> Áudio em formato ma4</li>
+        <li><audio src="Aud/audio-mp3.mp3" controls loop></audio> Áudio em formato mp3</li>
+        <li><audio src="Aud/audio-ogg.ogg" controls loop></audio> Áudio em formato ogg</li>
+        <li><audio src="Aud/audio-wav.wav" controls loop></audio> Áudio em formato wav</li>
+    </ul>
+
+
+</body>
+</html>

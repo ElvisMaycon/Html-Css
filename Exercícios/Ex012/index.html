@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Para fazer uma imagem ser dinanmica em diversos formatos de telas, vamos usar as tags: picture, img e source, com os atributos: Media, srcset e type </p>
+    
+    <picture>
+        <source media="(max-width: 750px )" srcset="IMG/Pequena.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="IMG/Media.png" type="image/png">
+        <img src="IMG/Grande.png" alt="Fleíxvel">
+    </picture>
+
+</body>
+</html>
