@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+
+    <style>
+        body{
+            background-color: antiquewhite;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        table{
+            
+            min-width: 600px;
+    
+            background-color: azure;
+            margin: auto;
+            border: 1.5px solid black;
+            border-collapse: collapse;
+
+            position: relative;
+        }
+
+        #t2{
+            min-height: 1500px;
+            position: relative;
+        }
+
+        caption{
+            font-size: 25px;
+            font-weight: bolder;
+            padding: 10px;
+        }
+
+        thead{
+            position: sticky;
+            top: -1px;
+            height: 40px;
+            color: white;
+        }
+
+        th{
+            background-color: rgb(54, 54, 54);
+            
+        }
+
+        td, th{
+            border: 1.5px solid black;
+            padding: 5px;
+            
+
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: lightgrey;
+        }
+
+        .position{
+            text-align: center;
+        }
+
+        .porcentagem{
+            text-align: center;
+        }
+
+        .numero{
+            text-align: right;
+        }
+
+        .Posição{
+            background-color: aquamarine;
+        }
+        .Estado{
+            background-color: brown;
+        }
+        .população{
+            background-color: cadetblue;
+        }
+        .porcentagem{
+            color: brown;
+            font-weight: 900;
+        }
+
+        #Tabela{
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela de população por estados brasileiro</h1>
+
+
+        <table>
+            <colgroup>
+                <col class="Posição">
+                <col class="Estado">
+                <col class="população">
+                <col class="porcentagem">
+            </colgroup>
+            <caption>População por estado brasileiro</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Posição</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">População</th>
+                    <th scope="col">% da popu. total</th>
+                </tr>
+            </thead>
+        </table>
+
+        <table id="t2">
+         
+                <tbody>
+                    <tr>
+                        <td class="position">1°</td>
+                        <td>São Paulo</td>
+                        <td class="numero">44 411 238</td>
+                        <td class="porcentagem">21,88%</td>
+                    </tr>
+                    <tr>
+                        <td class="position">2°</td>
+                        <td>Minas Gerais</td>
+                        <td class="numero">20 538 718</td>
+                        <td class="porcentagem">10,11%</td>
+                    </tr>
+                    <tr>
+                        <td class="position">3°</td>
+                        <td>Rio de Janeiro</td>
+                        <td class="numero">16 054 524</td>
+                        <td class="porcentagem">7,91%</td>
+                    </tr>
+                    <tr>
+                        <td class="position">4°</td>
+                        <td>Bahia</td>
+                        <td class="numero">14 141 626</td>
+                        <td class="porcentagem">6,96%</td>
+                    </tr>
+                    <tr>
+                        <td class="position">5°</td>
+                        <td>Paraná</td>
+                        <td class="numero">11 444 380</td>
+                        <td class="porcentagem">5,64%</td>
+                    </tr>
+                    <tr>
+                        <td class="position">6°</td>
+                        <td>Rio Grande do Sul</td>
+                        <td class="numero">10 882 965</td>
+                        <td class="porcentagem">5,36%</td>
+                    </tr>
+                    <tr>
+                        <td class="position">7°</td>
+                        <td>Pernambuco</td>
+                        <td class="numero">9 058 931</td>
+                        <td class="porcentagem">4,46%</td>
+                    </tr>
+                    <tr>
+                        <td class="position">8°</td>
+                        <td>Ceará</td>
+                        <td class="numero">8 794 957</td>
+                        <td class="porcentagem">4,33%</td>
+                    </tr>
+                    <tr>
+                        <td class="position">9°</td>
+                        <td>Pará</td>
+                        <td class="numero">8 121 025</td>
+                        <td class="porcentagem">4,1%</td>
+                    </tr>
+                    <tr>
+                        <td class="position">10°</td>
+                        <td>Santa Catarina</td>
+                        <td class="numero">7 610 361</td>
+                        <td class="porcentagem">3,75%</td>
+                    </tr>
+                    <tr>
+                        <td class="position">11°</td>
+                        <td>Goiás</td>
+                        <td class="numero">7 056 495</td>
+                        <td class="porcentagem">3,47%</td>
+                    </tr>
+                    <tr>
+                        <td class="position">12°</td>
+                        <td>Maranhão</td>
+                        <td class="numero">6 775 805</td>
+                        <td class="porcentagem">3,34%</td>
+                    </tr>
+                    <tr>
+                        <td class="position">13°</td>
+                        <td>Paraíba</td>
+                        <td class="numero">3 974 687</td>
+                        <td class="porcentagem">1,96%</td>
+                    </tr>
+                    <tr>
+                        <td class="position">14°</td>
+                        <td>Amazonas</td>
+                        <td class="numero">3 941 613</td>
+                        <td class="porcentagem">1,94%</td>
+                    </tr>
+                    <tr>
+                        <td class="position">15°</td>
+                        <td>Espírito Santo</td>
+                        <td class="numero">3 833 712</td>
+                        <td class="porcentagem">1,89%</td>
+                    </tr>
+                    <tr>
+                        <td class="position">16°</td>
+                        <td>Mato Grosso</td>
+                        <td class="numero">3 658 649</td>
+                        <td class="porcentagem">1,8%</td>
+                    </tr>
+                    <tr>
+                        <td class="position">17°</td>
+                        <td>Rio Grande do Norte</td>
+                        <td class="numero">3 302 729</td>
+                        <td class="porcentagem">1,63%	</td>
+                    </tr>
+                    <tr>
+                        <td class="position">18°</td>
+                        <td>Piauí</td>
+                        <td class="numero">3 272 199</td>
+                        <td class="porcentagem">1,61%</td>
+                    </tr>
+                    <tr>
+                        <td class="position">19°</td>
+                        <td>Alagoas</td>
+                        <td class="numero">3 127 683</td>
+                        <td class="porcentagem">1,54%</td>
+                    </tr>
+                    <tr>
+                        <td class="position">20°</td>
+                        <td>Distrito Federal</td>
+                        <td class="numero">2 817 381</td>
+                        <td class="porcentagem">1,39%</td>
+                    </tr>
+                    <tr>
+                        <td class="position">21°</td>
+                        <td>Mato Grosso do Sul</td>
+                        <td class="numero">2 757 013</td>
+                        <td class="porcentagem">1,36%</td>
+                    </tr>
+                    <tr>
+                        <td class="position">22°</td>
+                        <td>Sergipe</td>
+                        <td class="numero">2 209 558</td>
+                        <td class="porcentagem">1,09%</td>
+                    </tr>
+                    <tr>
+                        <td class="position">23°</td>
+                        <td>Rondônia</td>
+                        <td class="numero">1 581 196</td>
+                        <td class="porcentagem">0,78%</td>
+                    </tr>
+                    <tr>
+                        <td class="position">24°</td>
+                        <td>Tocantins</td>
+                        <td class="numero">1 511 460</td>
+                        <td class="porcentagem">0,74%</td>
+                    </tr>
+                    <tr>
+                        <td class="position">25°</td>
+                        <td>Acre</td>
+                        <td class="numero">830 018</td>
+                        <td class="porcentagem">0,41%</td>
+                    </tr>
+                    <tr>
+                        <td class="position">26°</td>
+                        <td>Amapá</td>
+                        <td class="numero">733 759</td>
+                        <td class="porcentagem">0,36%</td>
+                    </tr>
+                    <tr>
+                        <td class="position">27°</td>
+                        <td>Roraima</td>
+                        <td class="numero">636 707</td>
+                        <td class="porcentagem">0,31%</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Total</th>
+                        <td>--</td>
+                        <td class="numero">214,3 milhões</td>
+                        <td class="porcentagem">100%</td>
+                    </tr>
+                </tfoot>
+        </table>
+
+</body>
+</html>
