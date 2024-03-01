@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário05</title>
+
+    <style>
+        /*fieldset{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        
+            width: 500px;
+        } */
+
+        legend{
+            margin: auto;
+            font-size: 30px;
+        }
+
+        div{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos de formulários de check box</h1>
+
+    <form action="cadastro.php" method="get">
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imas" value="Masculino">
+            <label for="imas">Masculino</label>
+
+            <input type="radio" name="sexo" id="ifem" value="Feminino">
+            <label for="ifem">Feminino</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes</legend>
+            <div id="esport1">
+                <p>
+                    <input type="checkbox" name="basuqete" id="ibas">
+                    <label for="ibas">Basquete</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="fatubol" id="ifut">
+                    <label for="ifut">Futebol</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="volei" id="ivol">
+                    <label for="ivol">Volei</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="boxe" id="ibox">
+                    <label for="ibox">Boxe</label>
+                </p>
+            </div>
+
+            <div id="esport1">
+                <p>
+                    <input type="checkbox" name="ginastica" id="igin">
+                    <label for="igin">Ginástuca</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="hoquei" id="ihoq">
+                    <label for="ihoq">Hóquei</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="tenism" id="iten-m">
+                    <label for="iten-m">Tênis de Mesa</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="tiro" id="itio-a">
+                    <label for="itio-a">Tiro com arco</label>
+                </p>
+            </div>
+        </fieldset>
+
+
+        <p>
+            <input type="submit" value="Enviar formulário">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário04</title>
+</head>
+<body>
+    <h1>Exercicios de formulário 01</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        
+        <fieldset>
+            <legend style="font-size: 25px;">Dado pessoais</legend>
+            <p>
+                <label for="inome">Nome: </label>
+                <input type="text" name="" id="inome" required autocomplete="name">
+            </p>
+            
+            <p>
+                <label for="iemail">E-mail: </label>
+                <input type="email" name="" id="iemail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone: </label>
+                <input type="tel" name="" id="iteal" required autocomplete="tel" placeholder="(99) 99999-9999" pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
+            </p>
+
+            <p>
+                <label for="icpf">CPF: </label>
+                <input type="text" id="icpf" required pattern="^\d{3}.\d{3}.\d{3}-\d{2}$">
+            </p>
+            <p>Você concordar em roubarmos você com esses dados ? <input type="checkbox" name="" id="" required> </p>
+        </fieldset>
+
+        <p>
+            <input type="submit">
+        </p>
+
+        
+
+
+
+    </form>
+    
+</body>
+</html>

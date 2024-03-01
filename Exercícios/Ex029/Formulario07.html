@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario07</title>
+</head>
+<body>
+    <h1>Formulário 07</h1>
+
+    <form action="cadast.js" method="post">
+
+        <p>
+            <label for="iste">Estado</label>
+            <select name="estado" id="iste">
+                <optgroup label="EStados mais favoraveis">
+                    <option value="AC">AC</option>
+                    <option value="AL">AL</option>
+                    <option value="AP">AP</option>
+                    <option value="AM">AM</option>
+                    <option value="BA">BA</option>
+                    <option value="CE">CE</option>
+                    <option value="DF">DF</option>
+                </optgroup>
+                <optgroup label="Estdos rasualvelmente favoravel">
+                    <option value="ES">ES</option>
+                    <option value="GO">GO</option>
+                    <option value="MA">MA</option>
+                    <option value="MT">MT</option>
+                    <option value="MS">MS</option>
+                    <option value="MG">MG</option>
+                    <option value="PA">PA</option>
+                    <option value="PB">PB</option>
+                    <option value="PR">PR</option>
+                    <option value="PE">PE</option>
+                    <option value="PI">PI</option>
+                    <option value="RJ">RJ</option>
+                    <option value="RN">RN</option>
+                </optgroup>
+                <optgroup label="Estado pouco favoravel">
+                    <option value="RS">RS</option>
+                    <option value="RO">RO</option>
+                    <option value="RR">RR</option>
+                    <option value="SC">SC</option>
+                    <option value="SP" selected>SP</option>
+                    <option value="SE">SE</option>
+                    <option value="TO">TO</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="Profissão" id="iprof" list="prof-list">
+
+            <datalist id="prof-list">
+                <option value="Professor">Professor</option>
+                <option value="Desenvolvedor">Desenvolvedor</option>
+                <option value="Engenheiro">Engenheiro</option>
+                <option value="Veterinário">Veterinário</option>
+                <option value="Vendedor">Vendedor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="ims">Mensagem</label>
+            <textarea id="ims" cols="100" rows="10">
+                
+            </textarea>
+        </p>
+
+
+
+        <p>
+            <input type="submit" value="Enviar agora">
+            <input type="reset" value="Limpar TUDO">
+        </p>
+    </form>
+    
+</body>
+</html>
