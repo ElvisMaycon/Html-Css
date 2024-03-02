@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/* css para arquivo imprimido */
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5em;
+}
+
+header{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+h2#dia{
+    text-align: center;
+    font-size: 19px;
+}
+
+#temp{
+    display: none;
+}
+
+menu, a, ul {
+    display: none;
+}
+article{
+    margin: auto;
+    width: 100%;
+    text-align: justify;
+}
