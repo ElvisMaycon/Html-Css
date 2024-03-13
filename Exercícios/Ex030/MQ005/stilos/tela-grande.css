@@ -1,0 +1,30 @@
+@charset "UFT-8";
+
+div#menu{
+    display: none;
+}
+
+nav{
+    display: block;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    list-style: none;
+    background-color: rgb(214, 142, 8);
+}
+
+li{
+    display: block;
+}
+
+a{
+    display: block;
+    padding: 23px;
+    font-size: 20px;
+    margin: 0px;
+    border: none;
+}
